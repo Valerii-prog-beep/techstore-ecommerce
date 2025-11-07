@@ -395,7 +395,7 @@ export const mockApi = {
   // === UTILITY FUNCTIONS ===
 
   // Проверить доступность товара
-  checkProductAvailability: async (productId: string, quantity: number = 1): Promise<{ available: boolean; stock: number }> => {
+  checkProductAvailability: async (_productId: string, quantity: number = 1): Promise<{ available: boolean; stock: number }> => {
     await delay(150);
     
     // Имитация проверки склада
@@ -409,7 +409,7 @@ export const mockApi = {
   },
 
   // Получить отзывы товара
-  getProductReviews: async (_productId: string): Promise<any[]> => {
+  getProductReviews: async (): Promise<any[]> => {
     await delay(400);
     
     // Имитация отзывов
