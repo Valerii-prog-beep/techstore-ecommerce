@@ -24,8 +24,8 @@ export const HomePage: React.FC = () => {
     clearCart, 
     totalPrice, 
     totalItems,
-    loading: cartLoading,
-    error: cartError
+    
+    
   } = useCart();
   
   const { products, loading: productsLoading, error: productsError, refetch: refetchProducts } = useProducts();

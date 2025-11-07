@@ -409,7 +409,7 @@ export const mockApi = {
   },
 
   // Получить отзывы товара
-  getProductReviews: async (productId: string): Promise<any[]> => {
+  getProductReviews: async (_productId: string): Promise<any[]> => {
     await delay(400);
     
     // Имитация отзывов
